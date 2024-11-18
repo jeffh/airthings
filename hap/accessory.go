@@ -123,7 +123,7 @@ func (a *AirthingsAccessory) Update(samples map[airthings.SensorType]interface{}
 				continue
 			}
 			if value, ok := value.(float64); ok {
-				a.Battery.StatusLowBattery.SetValue(BatteryCharacteristics(value))
+				a.Battery.StatusLowBattery.SetValue(BatteryLevelCharacteristics(value))
 				a.Battery.BatteryLevel.SetValue(int(value))
 			}
 		case airthings.CO2:

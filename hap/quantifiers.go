@@ -1,5 +1,12 @@
 package hap
 
+// helper functions that calculate various metrics based on the values from sensors such as:
+// - air quality
+// - voc density
+// - battery level
+//
+// NOTE: air quality is typically a max over all air quality characteristics
+
 import (
 	"github.com/brutella/hap/characteristic"
 )
@@ -15,7 +22,7 @@ func CO2Characteristics(value float64) (airQuality, level int) {
 	}
 }
 
-func BatteryCharacteristics(value float64) (level int) {
+func BatteryLevelCharacteristics(value float64) (level int) {
 	if value < 10 {
 		return characteristic.StatusLowBatteryBatteryLevelLow
 	} else {
