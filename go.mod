@@ -5,7 +5,7 @@ go 1.24.0
 require (
 	github.com/brutella/hap v0.0.35
 	github.com/stretchr/testify v1.11.1
-	golang.org/x/oauth2 v0.33.0
+	golang.org/x/oauth2 v0.34.0
 )
 
 require (
