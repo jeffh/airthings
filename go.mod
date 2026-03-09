@@ -1,11 +1,11 @@
 module github.com/jeffh/airthings
 
-go 1.24.0
+go 1.25.0
 
 require (
 	github.com/brutella/hap v0.0.35
 	github.com/stretchr/testify v1.11.1
-	golang.org/x/oauth2 v0.35.0
+	golang.org/x/oauth2 v0.36.0
 )
 
 require (
